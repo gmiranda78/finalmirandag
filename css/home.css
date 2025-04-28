@@ -34,6 +34,8 @@
 /* About - Home */
 .home-main h2 {
     padding: 1rem 0;
+}
+
 .about p {
     text-indent: 2em;
     padding: 0 1.5rem 1.5rem 1.5rem;
@@ -109,7 +111,7 @@
         padding-bottom: 2rem;
     }
     .about p {
-        padding: 2rem;
+        padding: 1rem;
         margin: 0 1rem;
     }
 
