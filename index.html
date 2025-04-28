@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home</title>
+        <link rel="stylesheet" href="css/home.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="css/responsive-nav.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/responsive-nav.css">
+    </head>
+    <body>
+        <div class="grid-container">
+<!--NAV-->
+            <nav>
+                <div class="name"><a href="index.html">EM2 Machining</div>
+                <div class="nav-collapse">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="quality.html">Quality</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+<!--Header-->
+            <header>
+                <section class="home-hero">
+                    <h1 class="tagline">Where Precision &<br>The Future<br>Meet - Today</h1>
+                    <div class="caption"><a href="https://www.vecteezy.com/free-photos/machining">Source: Vecteezy</a></div>
+
+                </section>
+            </header>
+<!--Main-->
+            <main class="home-main"> 
+                <h2>About Our Company</h2>
+        <!--About-->
+                    <section class="about">
+                        <p>
+                            EM2 Machining has delivered precision-machined components in <strong>Greensboro, North Carolina</strong>, for nearly <strong> 20 years.</strong> Our small, skilled team specializes in aerospace and automatic machining, combining expertise with advanced equipment to handle complex manufacturing needs.
+                        </p>
+                        <p>
+                            We take pride in our ability to reliably and efficiently produce high-tolerance parts. From prototyping to production runs, every part we machine is backed by careful planning, close inspection, and a commitment to quality. Our ISO 9001:2015 certification reflects our dedication to continuous improvement and customer satisfaction.                        
+                        </p>
+                        <p>
+                            At EM2, we understand that strong relationships and clear communication are just as important as technical precision. Whether you're a large-scale manufacturer or a local business, we work with you directly to meet your deadlines and exceed your expectations.                        
+                        </p>
+                    </section>
+        <!--Buttons-->
+                    <div class="buttons">
+                        <div class="button-grid">
+                            <a href="services.html" class="services-button">Services </a>
+                            <a href="contact.html"class="quote-button">Request a Quote </a>
+                        </div>
+                    </div>
+        <!--Principles-->
+                    <div class="principles">
+                        <section class="principle">
+                            <div class="icon-text">
+                                <img src="img/check-icon.png" alt="check mark icon">
+                                <!--<a target="_blank" href="https://icons8.com/icon/11221/approval">Check</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>-->
+                                <h3>Reliability</h3>
+                            </div>
+                            <p>We deliver consistent results, part after part.</p>
+                        </section>
+                    
+                        <section class="principle">
+                            <div class="icon-text">
+                                <img src="img/stopwatch-icon.png" alt="stopwatch icon">
+                                <!--<a target="_blank" href="https://icons8.com/icon/85506/stopwatch">Stopwatch</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>-->
+                                <h3>Fast Delivery</h3>
+                            </div>
+                            <p>We meet your deadlines with an efficient turnaround.</p>
+                        </section>
+                        
+                        <section class="principle">
+                            <div class="icon-text">
+                                <figure></figure>
+                                <img src="img/tool-icon.png" alt="tool icon">
+                                <!--<a target="_blank" href="https://icons8.com/icon/Jdws2seKRQHz/prototyping">Prototyping</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>-->
+                                <h3>Quality</h3>
+                            </div>
+                            <p>Our processes ensure precision and excellence.</p>
+                    <div class="caption"><a target="_blank" href="https://icons8.com">Source: Icons8</a></div>
+                <div>            
+            </main>
+<!--Footer-->
+            <footer>
+                <p>Email: info@em2machining.com</p>
+                <p>Phone: (888) 123-4567</p>
+                <p>© 2025 EM2 Machining. All rights reserved.</p>
+            </footer>
+
+        </div>
+<!--Java-->
+        <script>
+            var nav = responsiveNav(".nav-collapse", {
+                label: "☰",
+                closeOnNavClick: true,
+                open: function () {
+                document.querySelector(".nav-toggle").innerHTML = "×";
+                },
+                close: function () {
+                document.querySelector(".nav-toggle").innerHTML = "☰";
+                }
+                });
+        </script>
+    </body>
+</html>

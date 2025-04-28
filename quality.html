@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Quality</title>
+
+        <link rel="stylesheet" href="css/quality.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="css/responsive-nav.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/responsive-nav.css">
+    </head>
+
+    <body>
+        <div class="grid-container">
+<!--NAV-->
+            <nav>
+                <div class="name"><a href="index.html">EM2 Machining</div>
+                <div class="nav-collapse">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="quality.html">Quality</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+<!--Header-->
+
+            <header>
+                <section class="quality-hero">
+                    <h1>Quality</h1>
+                    <div class="caption"><a href="https://pixabay.com/users/u_4xcm1iw8y9-38610006/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8429442">Source: Pixabay</a></div>
+                </section>
+            </header>
+<!--Main-->
+            <main class="quality-main">
+                    <h2> Precision You Can Trust</h2>
+<!--Quality Summary-->
+                <div class="quality-content">
+                    <p>
+                        At EM2 Machining, quality is the foundation of everything we do. From initial setup to final inspection, each part is produced with precision and care to ensure it meets exact specifications.
+                    </p>
+
+                    <p>
+                        We've invested in advanced inspection tools — including a <strong>Zeiss Coordinate Measuring Machine (CMM) </strong> — to verify tolerances and maintain consistency across every project. Our team follows certified inspection protocols and continuously monitors production to catch issues before they become problems. Whether you're in aerospace, manufacturing, or industrial tooling, we stand behind the quality of every part that leaves our shop. 
+                    </p>
+
+                    <p>
+                        We are also proud to be <strong>ISO 9001 certified</strong>, reinforcing our commitment to consistent quality and continual improvement. This certification ensures that our processes meet rigorous international standards and that a proven quality management system backs every part we produce.
+                    </p>
+        <!--Button-->
+                    <div class="quote-button-wrapper">
+                        <a href="contact.html" class="quote-button">Request a Quote</a>
+                    </div>               
+                </div>
+        <!--Images-->
+                <div class="img-container">  
+                    <figure>
+                        <img src="img/milling-heads.jpg" alt="milling heads" class="animated-img"/>
+                        <figcaption><a href="https://pixabay.com/users/blickpixel-52945/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=444493">Source: Pixabay</a></figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/vecteezy_engineer-technician-designing-drawings-mechanical-parts_11585989.jpg" alt="part drawing" class="animated-img" />
+                        <figcaption><a href="https://www.vecteezy.com/free-photos/draft">Source: Vecteezy</a></figcaption>
+                    </figure>  
+                    <figure>
+                        <img src="img/drilling.jpg" alt="drilling tool" class="animated-img">
+                        <figcaption><a href="https://pixabay.com/users/mrpstips-216821/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=539407">Source: Pixabay</a></figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/milling-head.jpg" alt="milling head" class="animated-img"/>
+                        <figcaption><a href="https://www.flickr.com/photos/127597452@N07/16917046491/">Source: Flickr</a></figcaption>
+                    </figure>                 
+                </div>
+            </main>
+<!--Footer-->
+            <footer>
+                <p>Email: info@em2machining.com</p>
+                <p>Phone: (888) 123-4567</p>
+                <p>© 2025 EM2 Machining. All rights reserved.</p>
+            </footer>
+        </div>
+<!--Java-->
+        <script>
+            var nav = responsiveNav(".nav-collapse", {
+                label: "☰",
+                closeOnNavClick: true,
+                open: function () {
+                document.querySelector(".nav-toggle").innerHTML = "×";
+                },
+                close: function () {
+                document.querySelector(".nav-toggle").innerHTML = "☰";
+                }
+                });
+        </script>
+    </body>
+</html>

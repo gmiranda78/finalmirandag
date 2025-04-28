@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #063540;
+    color: #ffffff;
+    margin: 0;
+}
+
+/* Grid */
+.grid-container {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas:
+        "nav"
+        "header"
+        "main"
+        "footer";
+    grid-template-rows: auto auto 1fr auto;
+}
+
+nav {
+    padding: 1.5rem 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    grid-area: nav;
+    display: flex;
+    justify-content: space-between;
+    background-color: #063540;
+}
+
+header {
+    grid-area: header;
+    background-color: #063540;
+    border-bottom: 10px solid #f6511d;
+}
+
+main {
+    grid-area: main;
+    background-color: #C0E0DE;
+    color: #063540;
+    z-index: 1;
+    position: relative; 
+    border-bottom: 10px solid #f6511d;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #063540;
+    color: #ffffff;
+    padding: 1rem;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+footer p:last-child {
+    text-align: right;
+}
+
+/*Typography*/
+h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #D1CAA1;
+    margin: 0;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    text-align: center;
+    color: #063540;
+    line-height: 1.5;
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #063540;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0.5rem 0.5rem;
+}
+
+.caption a {
+    color: grey;
+    font-size: 16px;
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
+    font-weight: normal;
+}
+
+figcaption a {
+    color: grey;
+}
+
+/* Navigation Bar*/
+nav .nav-collapse {
+    grid-area: nav;
+    margin: 2rem;
+    margin-bottom: 0;
+}
+
+nav .nav-collapse  ul {
+    list-style: none;
+    text-align: right;
+
+}
+
+nav .nav-collapse li {
+    padding: 5px;
+}
+
+nav .nav-collapse li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav .nav-collapse li a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.nav-toggle {
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    font-size: 3rem;
+    color: #f6511d;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    padding-bottom: 1rem;
+}
+
+.name a {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #f6511d;
+}
+
+.services-button,
+.quote-button {
+    font-weight: bold;
+    padding: 0.75rem;
+    border-radius: 4px;
+    font-size: 16px;
+    border: 2px solid #f6511d;
+    cursor: pointer;
+    width: 175px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.services-button {
+    background-color: #ffffff;
+    color: #f6511d;
+    grid-column: 1/2;
+}
+
+.quote-button {
+    background-color: #f6511d;
+    color: #ffffff;
+    grid-column: 2/3;
+}
+
+.services-button:hover {
+    color:#063540;
+    border: 2px solid #063540;
+    text-decoration: underline;
+}
+
+.quote-button:hover {
+    background-color: #f7ebe7;
+    color: #f6511d;
+    text-decoration: underline;
+}
+
+/* Defaults*/
+@media screen and (min-width: 768px) {
+    .js .nav-collapse {
+        position: relative;
+        max-height: none;
+        clip: auto;
+        overflow: visible;
+    }
+
+    .js .nav-collapse ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 4rem;
+    }
+
+    .js .nav-collapse li {
+        width: auto;
+        display: inline-block;
+    }
+
+    .js .nav-collapse a {
+        text-align: center;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    main {
+        padding: 40px;
+    }
+
+    h1 {
+        font-size: 48px;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    h2 {
+        font-size: 36px;
+        margin-top: 2rem;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    h3 {
+        font-weight: bold;
+        font-size: 22px;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 1.5;
+        margin: 0.5rem 0 1rem;
+    }
+
+    .name {
+        padding-top: 1rem;
+
+    }
+
+    .name a {
+        font-size: 40px;
+    }
+
+    nav .nav-collapse ul {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    nav .nav-collapse ul li a {
+        font-size: 20px;
+    }
+
+    nav .nav-toggle {
+        display: none;
+    }
+
+    .quote-button, .services-button {
+        font-size: 20px;
+        width: 200px;
+    }
+}
+
+
+
+
+

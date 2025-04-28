@@ -1,0 +1,126 @@
+/*Quality Page*/
+
+/* Quality Hero */
+.quality-hero {
+    position: relative;
+    padding: 4rem 1.5rem;
+    text-align: center;
+    height: 300px;
+    width: auto;
+    align-content: center;
+}
+
+.quality-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('../img/business-man-8429442_1280.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3; 
+    width: 100%;
+    z-index: 0;
+}
+/* Source - Image by <a href="https://pixabay.com/users/u_4xcm1iw8y9-38610006/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8429442">u_4xcm1iw8y9</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8429442">Pixabay</a> */
+
+.quality-hero h1 {
+    position: relative;
+    z-index: 1;
+}
+
+.quality-main {
+    padding: 40px;
+}
+
+.quality-content {
+    margin-top: 1rem;
+}
+
+.quality-content p {
+    line-height: 1.5;
+    text-indent: 2em;
+}
+
+.quote-button-wrapper {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+/* Images - Quality */
+.img-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 4rem 0rem 0rem 1rem;
+    align-items: center; 
+    width: 90%;
+    margin: 0 auto;
+}
+
+.animated-img {
+    width: 100%;
+    max-width: 455px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.animated-img:hover {
+    animation: bounce-scale 0.6s ease;
+}
+
+@keyframes bounce-scale {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+@media screen and (min-width: 768px) {
+    .quality-hero {
+        height: 450px;
+    }
+
+    .quality-main {
+        display:grid;
+        grid-template-rows: auto 1fr auto;
+        grid-template-columns: 1fr;
+        padding: 80px;
+        padding-top: 40px;
+    }
+
+    h2 {
+        grid-row: 1/2;
+    }
+    .quality-content {
+        grid-row: 2/3;
+        grid-column: 1/2;
+
+    }
+    .quality-content p {
+        align-content: center;
+        grid-row: 2/3;
+        grid-column: 1/2;
+        padding: 0 120px;
+        max-width: 1200px;
+    }
+
+    .img-container {
+        flex-direction: row;
+        overflow-x: auto;
+        gap: 1rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: thin;
+        padding: 2rem 0;
+    }
+    
+    figure .animated-img {
+        width: 400px;   
+        height: 300px;
+        scroll-snap-align: start;
+    }
+}
