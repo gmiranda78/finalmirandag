@@ -100,12 +100,11 @@
         grid-column: 1/2;
 
     }
-    .quality-content p {
-        align-content: center;
+    .quality-content {
         grid-row: 2/3;
         grid-column: 1/2;
         padding: 0 120px;
-        max-width: 1200px;
+
     }
 
     .img-container {
