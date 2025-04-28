@@ -38,7 +38,7 @@
 
 .about p {
     text-indent: 2em;
-    padding: 1rem 1.5rem 1.5rem 1.5rem;
+    padding: 1rem 1.5rem 1.5rem 1rem;
 }
 
 /* Buttons - Home */
@@ -67,14 +67,8 @@
     max-width: 350px;
 }
 
-.principle a {
-    color: #063540;
-    font-weight: bold;
-    text-decoration: underline;
-}
-
 .principle p {
-    padding: 0;
+    padding: 1rem;
     margin-top: 1rem;
 }
 
