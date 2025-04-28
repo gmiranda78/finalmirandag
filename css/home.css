@@ -31,16 +31,18 @@
     justify-content: center;
 }
 
-/* About - Home */
+
 .home-main h2 {
     padding-bottom: 1.5rem;
 }
 
-.about p {
+/* About - Home */
+.home-main .about p {
     text-indent: 2em;
-    padding: 0 1.5rem 1.5rem 1.5rem;
-        margin: 0 1rem;
+    padding: 0 1.5rem 1.5rem 1rem;
+    margin: 0 1rem;
 }
+
 
 /* Buttons - Home */
 .button-grid {
@@ -106,7 +108,6 @@
         grid-row: 1/2;
         padding-bottom: 2rem;
     }
-    
 
     .buttons {
         grid-column: 1/3;
