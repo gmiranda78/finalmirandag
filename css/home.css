@@ -144,11 +144,11 @@
         grid-column: 2/3;
         grid-row: 2/3;
         flex-direction: column;
-        padding: 1rem 1rem 0 0.5rem;
+        padding: 10px 1rem 0 0.5rem;
     }
 
     .principle {
-        max-width: 300px;
+        max-width: 325px;
     }
 
     .home-main .principles .principle p {
