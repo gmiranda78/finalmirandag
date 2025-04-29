@@ -39,7 +39,7 @@
 /* About - Home */
 .home-main .about p {
     text-indent: 2em;
-    padding: 0 1.5rem 0.5rem 1.5rem;
+    padding: 0 0 0.5rem 0;
 }
 
 .home-main .about {
