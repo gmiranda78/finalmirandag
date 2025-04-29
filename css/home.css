@@ -43,7 +43,7 @@
 }
 
 .home-main .about {
-    margin: 10px 15px 0 5px;
+    margin: 10px 10px 0 5px;
 }
 
 /* Buttons - Home */
@@ -118,7 +118,7 @@
     }
 
     .home-main .about p:first-child {
-        padding-top: 10px;
+        padding-top: 0;
     }
     
     .buttons {
