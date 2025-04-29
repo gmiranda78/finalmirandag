@@ -1,3 +1,4 @@
+
 /*Home Page*/
 
 /* Home Hero */
@@ -43,7 +44,7 @@
 }
 
 .home-main .about {
-    margin: 10px 10px 0 10px;
+    margin: 10px 0.5rem 20px 2rem;
 }
 
 /* Buttons - Home */
@@ -117,8 +118,12 @@
         margin: 0 20px;
     }
 
+    .home-main .about p {
+        padding-top: 15px;
+    }
+
     .home-main .about p:first-child {
-        padding-top: 0;
+        padding-top: 20px;
     }
     
     .buttons {
@@ -163,4 +168,3 @@
         margin-top: 1rem;
     }
 }
-
