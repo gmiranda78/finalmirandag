@@ -43,7 +43,7 @@
 }
 
 .home-main .about {
-    margin: 10px 15px 0 10px;
+    margin: 10px 15px 0 5px;
 }
 
 /* Buttons - Home */
@@ -111,15 +111,14 @@
         padding-bottom: 2rem;
     }
     
-    .about {
+    .home-main .about {
         grid-column: 1/2;
         grid-row: 2/3;
         margin: 0 20px;
-        padding-top: 20px;
     }
 
     .home-main .about p:first-child {
-        padding-top: 20px;
+        padding-top: 10px;
     }
     
     .buttons {
