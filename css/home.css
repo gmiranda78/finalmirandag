@@ -144,7 +144,7 @@
         grid-column: 2/3;
         grid-row: 2/3;
         flex-direction: column;
-        padding: 0.5rem 1rem 0 0.5rem;
+        padding: 1rem 1rem 0 0.5rem;
     }
 
     .principle {
@@ -152,9 +152,7 @@
     }
 
     .home-main .principles .principle p {
-        margin-top: 0;
-        padding: 20px 0;
-        
+        margin-top: 0;        
     }
 
     .icon-text img {
