@@ -152,7 +152,8 @@
     }
 
     .principle p {
-        padding-top: 1rem;        
+        margin-top: 1rem;
+        padding-bottom: 1rem;
     }
 
     .icon-text img {
